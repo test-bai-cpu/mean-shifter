@@ -29,6 +29,6 @@ poetry run python example.py
 A simple usage example is in [example.py](https://github.com/test-bai-cpu/mean-shifter/blob/master/example.py). 
 And more details are in the [report](https://github.com/test-bai-cpu/mean-shifter/blob/master/mean-shift-report.pdf).
 
-The Script used when writring the report is [reporter.py](https://github.com/test-bai-cpu/mean-shifter/blob/master/reporter.py).
+The script used when writing the report is [reporter.py](https://github.com/test-bai-cpu/mean-shifter/blob/master/reporter.py).
 
 

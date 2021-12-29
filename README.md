@@ -20,7 +20,15 @@ The inputs are:
   - For truncated Gaussian kernel: [bandwidth, beta]
 - `data_type`: Type is string. Options are: circular-linear, linear
 
+To run example.py from this directory:
+```bash
+cd mean-shift
+poetry run python example.py
+```
+
 A simple usage example is in [example.py](https://github.com/test-bai-cpu/mean-shifter/blob/master/example.py). 
-And more details are in the report.
+And more details are in the [report](https://github.com/test-bai-cpu/mean-shifter/blob/master/mean-shift-report.pdf).
+
+The Script used when writring the report is [reporter.py](https://github.com/test-bai-cpu/mean-shifter/blob/master/reporter.py).
 
 

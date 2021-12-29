@@ -15,7 +15,20 @@ def main():
     dataset = np.array([list(map(float, line.split(","))) for line in input_data])
 
     # To apply mean shift cluster to given dataset
-    mean_shifter = MeanShift(kernel="flat", kernel_parameters=[3], data_type="circular-linear")
+    # Inputs are:
+    # kernel: str: flat, gaussian, truncated_gaussian
+    # kernel_parameters: list[float]:
+    #                    For flat kernel: [bandwidth]
+    #                    For Gaussian kernel: [beta]
+    #                    For truncated Gaussian kernel: [bandwidth, beta]
+    # data_type: str: circular-linear, linear
+    mean_shifter = MeanShift(kernel="flat", kernel_parameters=[2], data_type="circular-linear")
+    # mean_shifter = MeanShift(
+    #     kernel="gaussian", kernel_parameters=[1], data_type="circular-linear"
+    # )
+    # mean_shifter = MeanShift(
+    #     kernel="truncated_gaussian", kernel_parameters=[2,1], data_type="circular-linear"
+    # )
     mean_shifter.fit(dataset)
 
     # To get cluster centers and labels for all samples in dataset
